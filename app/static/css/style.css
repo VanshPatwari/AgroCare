@@ -4,6 +4,7 @@ body {
     font-size: 100%;
     background: #fff;
 	font-family: 'Thasadith', sans-serif;
+	
 }
 
 html {
@@ -54,7 +55,7 @@ li {
 
 p {
     margin: 0;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 2em;
     letter-spacing: 2px;
     color: #707579;
@@ -415,7 +416,7 @@ li > a:only-child:after { content: ''; }
 }
 
 .w3layouts-banner-info h3 {
-    font-size: 4em;
+    font-size: 5em;
     text-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);
     font-weight: 600;
     color: #fff;
@@ -610,7 +611,7 @@ p.about-text {
     line-height: 28px;
 }
 .blog-info h4 {
-    font-size: 22px;
+    font-size: 25px;
     line-height: 42px;
     letter-spacing: 2px;
     font-weight: 600;
