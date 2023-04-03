@@ -1,9 +1,13 @@
 {% extends 'layout.html' %} {% block body %}
 
-<style>
+<style type="text/css">
 
     html body {
-      background-color: rgb(206, 206, 228);
+
+      background-image: url("cropbg.jpg");
+
+     
+      /* background-color: rgb(206, 206, 228); */
 
       
   }
@@ -25,11 +29,12 @@
     color: black;
     border-radius: 25px;
     padding: 10px 10px;
+    
   "
 >
   <form method="POST" action="{{ url_for('crop_prediction') }}">
     <div class="form-group">
-      <label for="Nitrogen" style="font-size: 17px"><b>Nitrogen</b></label>
+      <label for="Nitrogen" style="font-size: 21px"><b>Nitrogen</b></label>
       <input
         type="number"
         class="form-control"
@@ -41,7 +46,7 @@
       />
     </div>
     <div class="form-group">
-      <label for="Phosphorous" style="font-size: 17px"
+      <label for="Phosphorous" style="font-size: 21px"
         ><b>Phosphorous</b></label
       >
       <input
@@ -56,7 +61,7 @@
     </div>
 
     <div class="form-group">
-      <label for="Pottasium" style="font-size: 17px"><b>Pottasium</b></label>
+      <label for="Pottasium" style="font-size: 21px"><b>Pottasium</b></label>
       <input
         type="number"
         class="form-control"
@@ -68,7 +73,7 @@
       />
     </div>
     <div class="form-group">
-      <label for="ph" style="font-size: 17px"><b>ph level</b></label>
+      <label for="ph" style="font-size: 21px"><b>ph level</b></label>
       <input
         type="number"
         step="0.01"
@@ -81,7 +86,7 @@
       />
     </div>
     <div class="form-group">
-      <label for="Rainfall" style="font-size: 17px"><b>Rainfall (in mm)</b></label>
+      <label for="Rainfall" style="font-size: 21px"><b>Rainfall (in mm)</b></label>
       <input
         type="number"
         step="0.01"
@@ -94,7 +99,7 @@
       />
     </div>
     <div class="form-group">
-      <label for="State" style="font-size: 17px "><b>State</b></label>
+      <label for="State" style="font-size: 21px "><b>State</b></label>
       <select
         onchange="print_city('state', this.selectedIndex);"
         id="sts"
@@ -105,7 +110,7 @@
         required
       ></select>
       <br />
-      <label for="City" style="font-size: 17px"><b>City</b></label>
+      <label for="City" style="font-size: 21px"><b>City</b></label>
       <select
         id="state"
         class="form-control"
